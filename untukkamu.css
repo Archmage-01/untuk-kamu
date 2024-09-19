@@ -1,0 +1,43 @@
+body{ 
+    background-color: thistle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 600px; 
+}
+h1{
+    position: relative;
+    font-family: 'Segoe UI';
+    /**color: brown;**/
+}
+h1::before{
+    content: '';
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0; 
+    left: 0; 
+}
+h1::before{
+    background-color:whitesmoke;
+    animation: tulisan 5s steps(36) forwards;
+    /**animation: tulisan 5s ease forwards;**/
+}
+h1::after{
+    content: '';
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0; 
+    left: 0; 
+}
+h1::after{
+    background-color: red;
+    width: 5px;
+    animation: tulisan 5s steps(36) forwards;
+}
+@-webkit-keyframes tulisan{
+    to{
+       left:100%;
+    }
+} 
